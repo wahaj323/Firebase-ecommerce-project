@@ -1,0 +1,163 @@
+.nav-items-color a {
+  color: #ee6530;
+}
+.btn-outline-primary {
+  color: #ee6530; /* Text color */
+  border-color: #ee6530; /* Border color */
+}
+
+.btn-outline-primary:hover {
+  color: #ffffff; /* Text color on hover */
+  background-color: #ee6530; /* Background color on hover */
+  border-color: #ee6530; /* Border color on hover */
+}
+.btn-outline-primary:active {
+  color: #ffffff; /* Text color on hover */
+  background-color: #ee6530; /* Background color on hover */
+  border-color: #ee6530;
+}
+.home-img {
+  height: 90vh;
+  background-size: cover;
+  background-position: right top;
+  background-image: url("pictures/home-img-3.png");
+}
+.home-col1{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid; */
+}
+.counter-box{
+  height: 30vh;
+  background-color: #ee6530;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.pic301{
+  background-image: url("https://media.istockphoto.com/id/1409730623/photo/business-owner-with-his-staff-at-a-restaurant.jpg?s=612x612&w=0&k=20&c=PHFiQCTQZVaMrkuEPrwiRpVwJrlsJgUwQTCp8o3LiyE=");
+  background-position: center;
+  background-size: cover;
+  height: 60vmin;
+  border-radius: 10px;
+}
+.content302{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.custom-font {
+  font-size: 1rem; /* Base size (matches fs-6) */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+  .custom-font {
+      font-size: 1.25rem; /* Matches fs-5 */
+  }
+}
+.b{
+  border: 2px solid white;
+  height: 33vmin;
+}
+.pic403{
+  background-image: url("https://www.advancingnortheast.in/wp-content/uploads/2021/10/FIE-banner-events-page-1000x305-1.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  /* border-bottom-right-radius: 20px; */
+}
+.pic402{
+  background-image: url("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=556,505");
+  background-size: cover;
+  border-top-right-radius: 20px;
+  /* background-position: center; */
+
+}
+.pic401{
+  background-image: url("https://colonydiner.com/wp-content/uploads/2021/03/French.jpg");
+  background-size: cover;
+  background-position: top;
+  /* border-top-left-radius: 20px; */
+}
+.pic501{
+  background-image: url("pictures/image\ copy.png");
+  height: 400px;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  align-items: center;
+}
+.row502{
+ text-align: center; 
+}
+
+@media (width < 575px) {
+  .pic501{
+    background-position: 73%;
+  }
+  .home-img{
+    background-image: url("pictures/home-img-4.png");
+    background-position: center;
+  }
+}
+
+.card-body{
+  height: 150px;
+}
+.card-body-701{
+  height: 60px;
+}
+
+.btn-orange{
+  background-color: #ee6530;
+  color: white;
+}
+.btn-orange:hover{
+  background-color: white;
+  color: #ee6530;
+  box-sizing: border-box;
+  border: 1px solid #ee6530;
+  
+}
+.csl{
+  height: 70vh;
+}
+.csl-inside{
+  height: 45vh;
+}
+.review-box-1{
+  background-image: url("https://t4.ftcdn.net/jpg/02/45/56/35/360_F_245563558_XH9Pe5LJI2kr7VQuzQKAjAbz9PAyejG1.jpg");
+  background-size: cover;
+  background-position: center;
+} 
+.review-box{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+.acc801{
+  /* background-color: #ee6530; */
+  color: white;
+}
+.footer{
+  height: 30vh;
+  background-color: #ee6530;
+}
+.signup{
+  min-height: 60vh;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
