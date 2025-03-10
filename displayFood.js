@@ -2,7 +2,7 @@ import { auth,onAuthStateChanged, signOut, db} from "./firebase.js";
 import { collection, getDocs } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 
 let foodRoot = document.getElementById("food");
-// foodRoot.innerHTML = "";
+foodRoot.innerHTML = "";
 
 async function getFood() {
     const querySnapshot = await getDocs(collection(db, "food"));
@@ -21,7 +21,7 @@ async function getFood() {
                 <span class="fs-5 text-decoration-line-through text-secondary ms-2">RS 1200</span>
             </div>
             <div class="card-footer">
-                <div class="btn btn-orange col-12">Add to Cart</div>
+                <div class="btn btn-orange col-12" onclick="addToCart('${food.name}', ${food.price}, '${food.imageURL}')" >Add to Cart</div>
             </div>
         </div>`
         

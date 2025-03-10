@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon {
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #ee6530;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+/* Food Container */
+.food-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card .btn {
+    background: #ee6530;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.card .btn:hover {
+    background: #d1481f;
+}
+
+/* Cart Panel */
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: -70vmin;
+    width: 70vmin;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.cart-panel.show {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12vmin;
+}
+
+.cart-header button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.cart-item button {
+    background: #ee6530;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item button:hover {
+    background: #d1481f;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+        <div class="products">
+            <div class="product">
+                <h3>Product 1</h3>
+                <p>Price: $10</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product 2</h3>
+                <p>Price: $15</p>
+                <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product 3</h3>
+                <p>Price: $20</p>
+                <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+            </div>
+        </div>
+
+        <h2>Cart</h2>
+        <div id="cart">
+            <p>Cart is empty</p>
+        </div>
+
+        <h3>Total Price: <span id="total-price">$0</span></h3>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
