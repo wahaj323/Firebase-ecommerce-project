@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Admin Dashboard</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="admin_dashboard.html">Foods</a>
+                <a class="nav-link active" href="addfood.html">Add Food</a>
+            </div>
+            <button id="logoutBtn" class="btn btn-danger ms-auto">Logout</button>
+        </div>
+    </nav>
+    
+    <!-- Add Product Form -->
+    <div class="container mt-4">
+        <h2>Add Food</h2>
+        <form id="addFoodForm">
+            <div class="mb-3">
+                <label class="form-label">Food Name</label>
+                <input type="text" class="form-control" id="foodName" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Price</label>
+                <input type="number" class="form-control" id="foodPrice" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Serving</label>
+                <input type="text" class="form-control" id="foodServing" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Time</label>
+                <input type="text" class="form-control" id="foodTime" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Category</label>
+                <input type="text" class="form-control" id="foodCategory" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Food Image</label>
+                <input type="text" class="form-control" id="foodImageURL" required>
+            </div>
+            <button type="submit" class="btn btn-success">Add Food</button>
+        </form>
+    </div>
+
+    <script type="module" src="addfood.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

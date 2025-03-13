@@ -26,7 +26,6 @@ async function getFood() {
         </div>`
         
         foodRoot.innerHTML += row;
-        foodRoot.innerHTML += row;
     });
 
     

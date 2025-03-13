@@ -1,16 +1,26 @@
+import { auth, onAuthStateChanged, signOut } from "./firebase.js";
+
 let cart = [];
 let foodRoot = document.getElementById("food");
 let cartPanel = document.getElementById("cart-panel");
 
 function addToCart(name, price, imageURL) {
-    let item = cart.find(item => item.name === name);
-    if (item) {
-        item.quantity += 1;
+    let user = auth.currentUser; // ✅ Get current user
+
+    if (user) {
+        let item = cart.find(item => item.name === name);
+        if (item) {
+            item.quantity += 1;
+        } else {
+            cart.push({ name, price, imageURL, quantity: 1 });
+        }
+        updateCart();
     } else {
-        cart.push({ name, price, imageURL, quantity: 1 });
+        alert("Sign-in to Order");
+        window.location.href = "login/login.html"
     }
-    updateCart();
 }
+window.addToCart = addToCart;
 
 function updateCart() {
     let cartItems = document.getElementById("cart-items");
@@ -45,20 +55,22 @@ function updateCart() {
     cartCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
 }
 
-function changeQuantity(index, change) {
+// ✅ Expose functions to global scope for event listeners to work
+window.changeQuantity = function (index, change) {
     if (cart[index].quantity + change > 0) {
         cart[index].quantity += change;
     } else {
         cart.splice(index, 1);
     }
     updateCart();
-}
+};
 
-function removeFromCart(index) {
+window.removeFromCart = function (index) {
     cart.splice(index, 1);
     updateCart();
-}
+};
 
 function toggleCart() {
     cartPanel.classList.toggle("show");
 }
+window.toggleCart = toggleCart; // ✅ Make sure `toggleCart` is accessible globally

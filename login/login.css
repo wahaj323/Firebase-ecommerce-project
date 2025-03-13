@@ -1,0 +1,136 @@
+:root {
+  --primary-orange: #ee6530;
+  --light-orange: #f0825b;
+  --dark-orange: #d55020;
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+  --dark-gray: #343a40;
+}
+
+body {
+  background-color: var(--white);
+  font-family: 'Arial', sans-serif;
+  padding-top: 80px;
+}
+
+/* Auth Container Styling */
+.auth-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.auth-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: var(--white);
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  color: var(--dark-gray);
+  font-weight: 500;
+  padding: 12px 20px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  color: #ee6530;
+  border-bottom: 3px solid #ee6530;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+  color: var(--light-orange);
+}
+
+.card-body {
+  padding: 30px;
+}
+
+/* Form Styling */
+.form-label {
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+.form-control {
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ee6530;
+  box-shadow: 0 0 0 0.25rem rgba(238, 101, 48, 0.25);
+}
+
+/* Button Styling */
+.auth-btn {
+  background-color: #ee6530;
+  border-color: #ee6530;
+  color: var(--white);
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auth-btn:hover {
+  background-color: var(--dark-orange);
+  border-color: var(--dark-orange);
+}
+
+/* Override Bootstrap button primary style */
+.btn-primary {
+  background-color: #ee6530;
+  border-color: #ee6530;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+  background-color: var(--dark-orange) !important;
+  border-color: var(--dark-orange) !important;
+}
+
+/* Alert Styling */
+.alert {
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-items-color a {
+  color: #ee6530;
+  transition: color 0.3s ease;
+}
+
+.nav-items-color a:hover, 
+.nav-items-color a.active {
+  color: #ee6530;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .auth-container {
+    margin-top: 20px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+}
